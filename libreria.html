@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="buscador.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Buscar y Calcular Datos de Alumnos</h1>
+
+    <!-- Formulario para buscar por nombre y apellido -->
+    <h2>Buscar Alumnos</h2>
+    <label for="buscarNombre">Buscar por Nombre:</label>
+    <input type="text" id="buscarNombre" placeholder="Nombre">
+    <button onclick="buscarPorNombre()">Buscar</button><br><br>
+
+    <label for="buscarApellido">Buscar por Apellido:</label>
+    <input type="text" id="buscarApellido" placeholder="Apellido">
+    <button onclick="buscarPorApellido()">Buscar</button><br><br>
+
+    <!-- Resultados de la búsqueda -->
+    <h3>Resultados de la Búsqueda</h3>
+    <div id="resultadosBusqueda"></div>
+
+    <!-- Obtener promedio de un alumno -->
+    <h2>Obtener Promedio de un Alumno</h2>
+    <label for="alumnoPromedio">Buscar Alumno:</label>
+    <input type="text" id="buscarNombreAlumno" placeholder="Nombre">
+    <button onclick="buscarCalificacionPorNombre()">Obtener Promedio</button><br><br>
+
+    <div id="promedioAlumno"></div>
+
+    <!-- Obtener promedio del grupo -->
+    <!-- -->
+    <h2>Obtener Promedio del Grupo</h2>
+    <label for="grupoPromedio">Seleccionar Grupo:</label>
+    <select id="grupoSelect">
+        <option value="A">Grupo A</option>
+        <option value="B">Grupo B</option>
+        <option value="C">Grupo C</option>
+    </select>
+    <button onclick="obtenerPromedioGrupo()">Obtener Promedio</button><br><br>
+
+    <div id="promedioGrupo"></div>
+
+    <!-- Obtener lista de alumnos ordenados por calificación -->
+    <label for="ordenar">Seleccionar grupo o todos:</label>
+    <input type="checkbox" id="grupoA" name="grupo" value="A">
+    <label for="grupoA">Grupo A</label>
+    <input type="checkbox" id="grupoB" name="grupo" value="B">
+    <label for="grupoB">Grupo B</label>
+    <input type="checkbox" id="grupoC" name="grupo" value="C">
+    <label for="grupoC">Grupo C</label><br><br>
+
+    <label for="orden">Ordenar:</label>
+    <input type="radio" id="ascendente" name="orden" value="ascendente" checked>
+    <label for="ascendente">Ascendente</label>
+    <input type="radio" id="descendente" name="orden" value="descendente">
+    <label for="descendente">Descendente</label><br><br>
+
+    <button onclick="ordenarAlumnos()">Ordenar Alumnos</button><br><br>
+
+    <div id="alumnosOrdenados"></div>
+
+    <button onclick="redirigirAPagina()">Ir a otra página</button>
+
+    
+</body>
+
+</html>

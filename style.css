@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: seashell;
+    justify-content: center;
+    align-items: center;
+    background: rgb(228, 9, 175);
+    background: linear-gradient(90deg, rgba(228, 9, 175, 1) 15%, rgba(192, 0, 219, 1) 57%, rgba(109, 6, 143, 1) 77%);
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    align-items: center;
+    text-align: center;
+    margin: 30px;
+    font-family: ;
+}
+
+.altaalumno {
+    padding: 5px;
+    margin: 40px;
+}
+
+button {
+    align-items: center;
+    background-color: #0276FF;
+    border-radius: 8px;
+    border-style: none;
+    box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    font-family: "RM Neue", sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+    padding: 10px 21px;
+    text-align: center;
+    text-transform: none;
+    transition: color .13s ease-in-out, background .13s ease-in-out, opacity .13s ease-in-out, box-shadow .13s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+
+/* CSS */
+.button-22 {}
+
+button:active {
+    background-color: #006AE8;
+}
+
+button:hover {
+    background-color: #1C84FF;
+}

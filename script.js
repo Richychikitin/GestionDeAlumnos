@@ -16,6 +16,13 @@ const grupos = {
   C: []
 };
 
+
+function guardarDatosEnLocalStorage() {
+  localStorage.setItem('listaAlumnos', JSON.stringify(listaAlumnos));
+  localStorage.setItem('grupos', JSON.stringify(grupos));
+  window.location.href = 'libreria.html'; // Redirige a la nueva página
+}
+
 function limpiarSelect(selectId) {
   const select = document.getElementById(selectId);
   while (select.firstChild) {
