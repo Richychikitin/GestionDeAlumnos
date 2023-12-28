@@ -14,8 +14,7 @@ body {
     background-color: seashell;
     justify-content: center;
     align-items: center;
-    background: rgb(228, 9, 175);
-    background: linear-gradient(90deg, rgba(228, 9, 175, 1) 15%, rgba(192, 0, 219, 1) 57%, rgba(109, 6, 143, 1) 77%);
+    background: linear-gradient(90deg, rgb(219, 46, 46) 15%, rgb(137, 36, 151) 57%, rgba(109, 6, 143, 1) 77%);
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
@@ -24,7 +23,6 @@ h1 {
     align-items: center;
     text-align: center;
     margin: 30px;
-    font-family: ;
 }
 
 .altaalumno {
@@ -47,7 +45,7 @@ button {
     font-family: "RM Neue", sans-serif;
     font-size: 100%;
     line-height: 1.15;
-    margin: 0;
+    margin: 10px;
     padding: 10px 21px;
     text-align: center;
     text-transform: none;
@@ -58,13 +56,68 @@ button {
 }
 
 
-/* CSS */
-.button-22 {}
-
 button:active {
     background-color: #006AE8;
 }
 
 button:hover {
     background-color: #1C84FF;
+}
+
+input{
+    padding: 0 10px;
+    text-align: left;
+    transition-property: box-shadow, background;
+    transition-duration: 150ms;
+    transition-timing-function: ease-in-out;
+    background-color: #FFFFFF;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #DAE3F3;
+    border-radius: 0px;
+    color: #272C34;
+    width: 20%;
+    cursor: text;
+    font-size: 14px;
+    line-height: 10px;
+    letter-spacing: 0px;
+    font-weight: 20px;
+    font-style: normal;
+    height: 30px;
+}
+input:hover {
+    box-shadow: 0px 2px 4px rgb(39 44 52 / 12%);
+}
+input:focus{
+    transition-property: border-color, box-shadow, background;
+    border-color: #39414D;
+    outline: 0px;
+    box-shadow: 0 0 0 3px #c5d2e7;
+}
+
+.select
+{
+  display: inline-block;
+  width: 160px;
+  height: 34px;
+  line-height: 30px;
+  position: relative;
+}
+
+.select:before
+{
+  content: ">";
+  display: inline-block;
+  background: white;
+  position: absolute;
+  right: -5px;
+  top: 2px;
+  z-index: 2;
+  width: 30px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  border: 2px solid #ddd;
+  transform: rotate(90deg);
+  cursor: pointer;
 }

@@ -79,7 +79,7 @@ function darDeAltaAlumno() {
   const nuevoAlumno = new Alumno(nombre, apellidos, edad);
   listaAlumnos.push(nuevoAlumno);
   llenarAlumnosSelect();
-  console.log(`Alumno ${nombre} ${apellidos} dado de alta.`);
+  alert(`Alumno ${nombre} ${apellidos} dado de alta.`);
 }
 
 
@@ -92,13 +92,13 @@ function inscribirAlumnoAClase() {
     const alumno = listaAlumnos[alumnoIndex];
     if (!estaInscritoEnMateria(alumno)) {
       alumno.materiasInscritas.push(materia);
-      console.log(`Alumno ${alumno.nombre} inscrito a la materia ${materia}.`);
+      alert(`Alumno ${alumno.nombre} inscrito a la materia ${materia}.`);
       llenarAlumnosSelect(); // Actualizar los select después de inscribir al alumno en la materia
     } else {
-      console.log(`El alumno ${alumno.nombre} ya está inscrito en la materia ${materia}.`);
+      alert(`El alumno ${alumno.nombre} ya está inscrito en la materia ${materia}.`);
     }
   } else {
-    console.log("Índice de alumno inválido.");
+    alert("Índice de alumno inválido.");
   }
 }
 
@@ -111,12 +111,12 @@ function asignarCalificaciones() {
     const alumno = listaAlumnos[alumnoIndex];
     if (alumno.materiasInscritas.includes(materia)) {
       alumno.calificaciones[materia] = calif;
-      console.log(`Calificación ${calif} asignada al alumno ${alumno.nombre} en la materia ${materia}.`);
+      alert(`Calificación ${calif} asignada al alumno ${alumno.nombre} en la materia ${materia}.`);
     } else {
-      console.log(`El alumno no está inscrito en la materia ${materia}.`);
+      alert(`El alumno no está inscrito en la materia ${materia}.`);
     }
   } else {
-    console.log("Índice de alumno inválido.");
+    alert("Índice de alumno inválido.");
   }
 }
 
@@ -137,16 +137,16 @@ function asignarAlumnoAGrupo() {
     if (!estaEnGrupo(alumno)) {
       if (nombreGrupo in grupos) {
         grupos[nombreGrupo].push(alumno);
-        console.log(`Alumno ${alumno.nombre} asignado al grupo ${nombreGrupo}.`);
+        alert(`Alumno ${alumno.nombre} asignado al grupo ${nombreGrupo}.`);
         llenarAlumnosSelect(); // Actualizar los select después de asignar el alumno al grupo
       } else {
-        console.log(`El grupo ${nombreGrupo} no existe.`);
+        alert(`El grupo ${nombreGrupo} no existe.`);
       }
     } else {
-      console.log(`El alumno ${alumno.nombre} ya está en un grupo.`);
+      alert(`El alumno ${alumno.nombre} ya está en un grupo.`);
     }
   } else {
-    console.log("Índice de alumno inválido.");
+    alert("Índice de alumno inválido.");
   }
 }
 

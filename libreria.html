@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="buscador.js"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
@@ -12,6 +13,7 @@
     <h1>Buscar y Calcular Datos de Alumnos</h1>
 
     <!-- Formulario para buscar por nombre y apellido -->
+    <div class="altaalumno">
     <h2>Buscar Alumnos</h2>
     <label for="buscarNombre">Buscar por Nombre:</label>
     <input type="text" id="buscarNombre" placeholder="Nombre">
@@ -24,7 +26,9 @@
     <!-- Resultados de la búsqueda -->
     <h3>Resultados de la Búsqueda</h3>
     <div id="resultadosBusqueda"></div>
-
+</div>
+<hr>
+<div class="altaalumno">
     <!-- Obtener promedio de un alumno -->
     <h2>Obtener Promedio de un Alumno</h2>
     <label for="alumnoPromedio">Buscar Alumno:</label>
@@ -32,9 +36,12 @@
     <button onclick="buscarCalificacionPorNombre()">Obtener Promedio</button><br><br>
 
     <div id="promedioAlumno"></div>
+</div>
+<hr>
 
     <!-- Obtener promedio del grupo -->
     <!-- -->
+    <div class="altaalumno">
     <h2>Obtener Promedio del Grupo</h2>
     <label for="grupoPromedio">Seleccionar Grupo:</label>
     <select id="grupoSelect">
@@ -45,8 +52,11 @@
     <button onclick="obtenerPromedioGrupo()">Obtener Promedio</button><br><br>
 
     <div id="promedioGrupo"></div>
-
+</div>
+<hr>
     <!-- Obtener lista de alumnos ordenados por calificación -->
+    <div class="altaalumno">
+    <h2>Buscar Alumno por grupo</h2>
     <label for="ordenar">Seleccionar grupo o todos:</label>
     <input type="checkbox" id="grupoA" name="grupo" value="A">
     <label for="grupoA">Grupo A</label>
@@ -64,9 +74,12 @@
     <button onclick="ordenarAlumnos()">Ordenar Alumnos</button><br><br>
 
     <div id="alumnosOrdenados"></div>
+    </div>
 
+    <div class="altaalumno">
     <button onclick="redirigirAPagina()">Ir a otra página</button>
-
+    </div>
+    
     
 </body>
 
